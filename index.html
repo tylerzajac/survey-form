@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zri8sje.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+    <section>
+        <form id="survey-form">
+            <!--Demographic info input-->
+            <div>
+                <label id="name-label" for="name">Name</label><br>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required>
+                <br>
+    
+                <label id="email-label" for="email">Email</label><br>
+                <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+                <br>
+    
+                <label id="number-label" for="number">Age</label><br>
+                <input id="number" type="number" name="number" min="13" max="99" placeholder="Age">
+            </div>
+            <br>
+
+            <!-- Insert Drop down here-->
+            <div id="dropdown-select">
+                <div>
+                    <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+                </div>
+
+                <select id="dropdown" name="role">
+                    <option value="">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full-Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="no-comment">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+
+            <!--Radio Select-->
+            <div id="radio-select">
+                <div>
+                    <label id="radio-label" for="radio-select">Would you recommend freeCodeCamp to a friend?</label>
+                </div>
+            
+                <div>
+                    <input type="radio" value="definitely" name="radio">Definitely</input>
+                </div>
+                <div>
+                    <input type="radio" value="maybe" name="radio">Maybe</input>
+                </div>
+              
+                <div>
+                    <input type="radio" value="notSure" name="radio">Not sure</input>
+                </div>
+            </div>
+            <br>
+            
+            <!--Checkbox select-->
+            <div id="checkbox-select">
+                <!--checkbox label-->
+                <div>
+                    <label id="checkbox-label" for="checkbox-list">What would you like to see improved? Check all that apply</label>
+                </div>
+                <!--checkbox options-->
+                <div id="checkbox-list">
+                    <div>
+                        <input id="front-end" type="checkbox" name="front-end-checkbox" value="front-end">
+                        <label id="front-end-label" for="front-end">Front-end Projects</label>
+                    </div>
+                    <div>
+                        <input id="back-end" type="checkbox" name="back-end-checkbox" value="back-end">
+                        <label id="back-end-label" for="back-end">Back-end Projects</label>
+                    </div>
+                    <div>
+                        <input id="data-viz" type="checkbox" name="data-viz" value="data-viz">
+                        <label id="data-viz-label" for="data-viz">Data visualization</label>
+                    </div>
+                    <div>
+                        <input id="challenges" type="checkbox" name="challenges" value="challenges">
+                        <label id="challenges-label" for="challenges">Challenges</label>
+                    </div>
+                </div>
+            </div>
+           
+            <p>Any comments or suggestions?</p>
+
+            <textarea>Enter your comment here</textarea><br>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </section>
+</body>
+</html>
